@@ -1,0 +1,23 @@
+EV SPEED AND RANGE SIMULATION
+Battery Capacity: 60 kWh
+Initial SOC: 80%
+
+Speed: 30 km/h
+Consumption: 12 kWh/100 km
+Estimated Range: 400.00 km
+
+Speed: 40 km/h
+Consumption: 13 kWh/100 km
+Estimated Range: 369.23 km
+
+Speed: 60 km/h
+Consumption: 15 kWh/100 km
+Estimated Range: 320.00 km
+
+Speed: 80 km/h
+Consumption: 18 kWh/100 km
+Estimated Range: 266.67 km
+
+Speed: 100 km/h
+Consumption: 22 kWh/100 km
+Estimated Range: 218.18 km

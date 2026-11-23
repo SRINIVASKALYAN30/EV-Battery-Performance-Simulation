@@ -1,0 +1,8 @@
+EV CHARGING COMPARISON RESULTS
+Battery Capacity: 60 kWh
+Initial SOC: 30%
+Target SOC: 80%
+Energy Required: 30.00 kWh
+Slow Charging Time: 4.76 hours
+Fast Charging Time: 0.63 hours
+Time Saved: 4.13 hours

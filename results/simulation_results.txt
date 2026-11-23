@@ -1,0 +1,9 @@
+EV BATTERY SIMULATION RESULTS
+Battery Capacity: 60 kWh
+Initial SOC: 30.00%
+SOC After Charging: 51.00%
+Driving Distance: 100 km
+Energy Consumed: 15.00 kWh
+Final SOC: 26.00%
+Remaining Energy: 15.60 kWh
+Estimated Remaining Range: 104.00 km
