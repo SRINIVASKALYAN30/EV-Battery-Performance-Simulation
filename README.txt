@@ -1,42 +1,31 @@
 
-<div align="center">
+============================================================
+             EV BATTERY PERFORMANCE SIMULATION
+============================================================
 
-  <h1>⚡ EV Battery Performance Simulation</h1>
+Understanding Electric Vehicle Battery Charging,
+Discharging and State of Charge (SOC)
 
-  <h3>Understanding Electric Vehicle Battery Charging, Discharging & State of Charge</h3>
+------------------------------------------------------------
+1. ABOUT THE PROJECT
+------------------------------------------------------------
 
-  <p>
-    A Python-based simulation that demonstrates how an electric vehicle's
-    battery performs during charging and driving.
-  </p>
+EV Battery Performance Simulation is a Python-based project
+developed to understand and demonstrate the performance of
+an Electric Vehicle (EV) battery.
 
-  <p>
-    <img src="https://img.shields.io/badge/Python-3.12-blue?logo=python" alt="Python">
-    <img src="https://img.shields.io/badge/NumPy-Used-orange?logo=numpy" alt="NumPy">
-    <img src="https://img.shields.io/badge/Matplotlib-Visualization-green" alt="Matplotlib">
-    <img src="https://img.shields.io/badge/Project-Completed-success" alt="Completed">
-  </p>
+The project simulates battery charging and discharging
+conditions and calculates important battery parameters,
+including State of Charge (SOC), energy consumption,
+remaining battery energy and estimated driving range.
 
-</div>
+It demonstrates how battery energy changes when an
+electric vehicle is charged and driven over a particular
+distance.
 
----
-
-## 📌 About the Project
-
-**EV Battery Performance Simulation** is a Python-based project developed to understand and demonstrate the performance of an Electric Vehicle (EV) battery.
-
-The project simulates battery charging and discharging conditions and calculates important battery parameters such as:
-
-- Initial State of Charge (SOC)
-- SOC after charging
-- Energy consumed during driving
-- Remaining battery energy
-- Final State of Charge
-- Estimated remaining driving range
-
-The simulation helps explain how battery energy changes when an electric vehicle is charged and driven over a particular distance.
-
-## 🎯 Project Objectives
+------------------------------------------------------------
+2. PROJECT OBJECTIVES
+------------------------------------------------------------
 
 - Understand the working principle of EV batteries.
 - Simulate battery charging and discharging.
@@ -44,137 +33,149 @@ The simulation helps explain how battery energy changes when an electric vehicle
 - Estimate energy consumption during driving.
 - Calculate the remaining battery capacity.
 - Estimate the remaining driving range.
-- Apply Python programming to a real-world EV application.
+- Apply Python programming to an EV application.
 
-## ⚙️ Technologies Used
+------------------------------------------------------------
+3. TECHNOLOGIES USED
+------------------------------------------------------------
 
-| Technology | Purpose |
-|---|---|
-| Python | Main programming language |
-| NumPy | Numerical calculations |
-| Matplotlib | Data visualization |
+1. Python
+   Main programming language used to develop the
+   simulation.
 
-## 🔋 How the Simulation Works
+2. NumPy
+   Used for numerical calculations.
+
+3. Matplotlib
+   Used for data visualization.
+
+------------------------------------------------------------
+4. HOW THE SIMULATION WORKS
+------------------------------------------------------------
 
 The simulation follows these steps:
 
-<div align="center">
+1. Initialize the battery capacity and initial SOC.
+2. Simulate battery charging.
+3. Calculate the SOC after charging.
+4. Enter the vehicle driving distance.
+5. Calculate the energy consumed during driving.
+6. Calculate the remaining battery energy.
+7. Calculate the final SOC.
+8. Estimate the remaining driving range.
 
-  <h3>Battery Performance Workflow</h3>
+------------------------------------------------------------
+5. MATHEMATICAL CALCULATIONS
+------------------------------------------------------------
 
-  <p>🔋 Initial Battery State</p>
-  <p>⬇️</p>
-  <p>⚡ Battery Charging</p>
-  <p>⬇️</p>
-  <p>📊 Calculate SOC After Charging</p>
-  <p>⬇️</p>
-  <p>🚗 Simulate Vehicle Driving</p>
-  <p>⬇️</p>
-  <p>⚡ Calculate Energy Consumption</p>
-  <p>⬇️</p>
-  <p>🔋 Calculate Remaining Battery Energy</p>
-  <p>⬇️</p>
-  <p>📍 Estimate Remaining Driving Range</p>
+A. Energy Consumed
 
-</div>
+Energy Consumed (kWh) =
+Distance (km) x Energy Consumption Rate (kWh/km)
 
-## 🧮 Mathematical Calculations
+B. Remaining Battery Energy
 
-The simulation uses the following basic formulas:
+Remaining Energy =
+Battery Capacity x (Final SOC / 100)
 
-**1. Energy Consumed**
+C. Final State of Charge
 
-Energy Consumed (kWh) = Distance (km) × Energy Consumption Rate (kWh/km)
+Final SOC (%) =
+(Remaining Energy / Battery Capacity) x 100
 
-**2. Remaining Battery Energy**
+D. Estimated Remaining Range
 
-Remaining Energy = Battery Capacity × (Final SOC / 100)
+Remaining Range =
+Remaining Energy / Energy Consumption Rate
 
-**3. Final State of Charge**
+------------------------------------------------------------
+6. SIMULATION RESULTS
+------------------------------------------------------------
 
-Final SOC (%) = (Remaining Energy / Battery Capacity) × 100
+Battery Capacity          : 60 kWh
+Initial SOC               : 30%
+SOC After Charging        : 51%
+Driving Distance          : 100 km
+Energy Consumed           : 15 kWh
+Final SOC                 : 26%
+Remaining Energy          : 15.60 kWh
+Estimated Remaining Range : 104 km
 
-**4. Estimated Remaining Range**
+------------------------------------------------------------
+7. UNDERSTANDING THE RESULTS
+------------------------------------------------------------
 
-Remaining Range = Remaining Energy / Energy Consumption Rate
-
-## 📊 Simulation Results
-
-The following table shows the output from the completed simulation.
-
-| Parameter | Simulation Result |
-|---|---:|
-| Battery Capacity | 60 kWh |
-| Initial SOC | 30% |
-| SOC After Charging | 51% |
-| Driving Distance | 100 km |
-| Energy Consumed | 15 kWh |
-| Final SOC | 26% |
-| Remaining Energy | 15.60 kWh |
-| Estimated Remaining Range | 104 km |
-
-### 🔍 Understanding the Results
-
-- The battery initially contains 30% charge.
+- Initially, the battery contains 30% charge.
 - After charging, the battery SOC increases to 51%.
-- The vehicle travels a distance of 100 km.
+- The electric vehicle travels 100 km.
 - During driving, 15 kWh of energy is consumed.
 - After the journey, the battery retains 26% charge.
-- The remaining energy is 15.60 kWh.
-- Based on the simulated energy consumption rate, the vehicle can travel approximately another 104 km.
+- The remaining battery energy is 15.60 kWh.
+- Based on the simulated energy consumption rate,
+  the vehicle can travel approximately another 104 km.
 
-## 💡 Key Features
+------------------------------------------------------------
+8. KEY FEATURES
+------------------------------------------------------------
 
-- **Battery Charging Simulation:** Demonstrates an increase in battery SOC.
-- **Battery Discharging Simulation:** Calculates energy used during vehicle operation.
-- **SOC Calculation:** Tracks the battery's remaining charge percentage.
-- **Energy Monitoring:** Calculates consumed and remaining energy.
-- **Range Estimation:** Estimates how far the vehicle can travel with its remaining charge.
-- **Python-Based Implementation:** Uses simple mathematical calculations and programming concepts.
+1. Battery Charging Simulation
+   Demonstrates an increase in battery SOC.
 
-## 🚀 How to Run the Project
+2. Battery Discharging Simulation
+   Calculates energy used during vehicle operation.
 
-### 1. Clone the Repository
+3. SOC Calculation
+   Tracks the remaining battery charge percentage.
 
-```bash
+4. Energy Monitoring
+   Calculates consumed and remaining energy.
+
+5. Range Estimation
+   Estimates the remaining driving distance.
+
+6. Python-Based Implementation
+   Uses mathematical calculations and programming
+   concepts to simulate battery performance.
+
+------------------------------------------------------------
+9. HOW TO RUN THE PROJECT
+------------------------------------------------------------
+
+Step 1: Clone the Repository
+
 git clone https://github.com/SRINIVASKALYAN30/EV-Battery-Performance-Simulation.git
-```
 
-### 2. Open the Project Folder
+Step 2: Open the Project Folder
 
-```bash
 cd EV-Battery-Performance-Simulation
-```
 
-### 3. Install Required Libraries
+Step 3: Install Required Libraries
 
-```bash
 pip install numpy matplotlib
-```
 
-### 4. Run the Python Program
+Step 4: Run the Python Program
 
-Use the main Python simulation file:
-
-```bash
 python main.py
-```
 
-If your main Python file has a different name, replace `main.py` with its actual filename.
+Note: If your main Python file has a different name,
+replace main.py with its actual filename.
 
-## 🌍 Real-World Applications
-
-This type of simulation helps understand:
+------------------------------------------------------------
+10. REAL-WORLD APPLICATIONS
+------------------------------------------------------------
 
 - Electric vehicle battery monitoring.
-- Battery charge and discharge behaviour.
+- Battery charge and discharge analysis.
 - Driving range estimation.
 - Energy consumption analysis.
 - Basic EV battery performance evaluation.
 
-## ⚠️ Limitations
+------------------------------------------------------------
+11. LIMITATIONS
+------------------------------------------------------------
 
-This is an educational simulation based on simplified mathematical calculations.
+This is an educational simulation based on simplified
+mathematical calculations.
 
 Actual EV battery performance may vary depending on:
 
@@ -185,9 +186,12 @@ Actual EV battery performance may vary depending on:
 - Vehicle weight and driving style.
 - Charging and discharging efficiency.
 
-The estimated range is a theoretical value and may differ from the actual range of an electric vehicle.
+The estimated range is a theoretical value and may
+differ from the actual range of an electric vehicle.
 
-## 🔮 Future Enhancements
+------------------------------------------------------------
+12. FUTURE ENHANCEMENTS
+------------------------------------------------------------
 
 - Develop an interactive battery monitoring dashboard.
 - Add real-time SOC visualization.
@@ -196,32 +200,25 @@ The estimated range is a theoretical value and may differ from the actual range 
 - Add temperature-dependent battery behaviour.
 - Integrate real-world EV battery datasets.
 
-## 👨‍💻 Project Information
+------------------------------------------------------------
+13. PROJECT INFORMATION
+------------------------------------------------------------
 
-**Project Name:** EV Battery Performance Simulation
+Project Name   : EV Battery Performance Simulation
+Domain         : Electric Vehicles and Battery Technology
+Language       : Python
+Project Type   : Simulation-Based Mini Project
+Project Status : Completed
 
-**Domain:** Electric Vehicles and Battery Technology
+GitHub Profile:
+https://github.com/SRINIVASKALYAN30
 
-**Programming Language:** Python
+============================================================
+       POWERING THE FUTURE OF ELECTRIC MOBILITY
+============================================================
 
-**Project Type:** Simulation-Based Mini Project
+Developed as an academic mini-project to explore
+EV battery performance using Python.
 
-**Status:** Completed
-
----
-
-<div align="center">
-
-  <h3>⚡ Powering the Future of Electric Mobility ⚡</h3>
-
-  <p>Developed as an academic mini-project to explore EV battery performance using Python.</p>
-
-  <p>
-    <a href="https://github.com/SRINIVASKALYAN30">
-      GitHub Profile
-    </a>
-  </p>
-
-  <p><b>Thank you for visiting this repository!</b></p>
-
-</div>
+                 THANK YOU!
+============================================================
