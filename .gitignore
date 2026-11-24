@@ -1,0 +1,20 @@
+# Raw empirical telemetry data (exceeds GitHub 100MB file limit)
+*.mat
+Real-world electric vehicle data driving and charging/**/*.mat
+
+# Temporary Microsoft Office lock files
+~$*.docx
+~$*.pptx
+~$*.xlsx
+
+# Backups
+*.bak
+
+# Python byte code and cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# OS generated files
+.DS_Store
+Thumbs.db
